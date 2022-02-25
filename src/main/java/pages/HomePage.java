@@ -21,16 +21,6 @@ public class HomePage {
         return new LoginPage(driver);
     }
 
-    public DropDownPage clickDropDownLink (){
-        clickLink("Dropdown");
-        return new DropDownPage(driver);
-    }
-
-    public ForgottenPasswordPage clickForgotPasswordLink (){
-        clickLink("Forgot Password");
-        return new ForgottenPasswordPage(driver);
-    }
-
 /*
     public LoginPage clickFormAuthentificationLink (){
         driver.findElement(formAuthentificationLink).click();
@@ -42,4 +32,18 @@ public class HomePage {
         return new DropDownPage(driver);
     }
 */
+    public DropDownPage clickDropDownLink (){
+    clickLink("Dropdown");
+    return new DropDownPage(driver);
+}
+
+    public ForgottenPasswordPage clickForgotPasswordLink (){
+        clickLink("Forgot Password");
+        return new ForgottenPasswordPage(driver);
+    }
+
+    public HoversPage clickHoversLink (){
+        clickLink("Hovers");
+        return new HoversPage(driver);
+    }
 }
