@@ -46,4 +46,14 @@ public class HomePage {
         clickLink("Hovers");
         return new HoversPage(driver);
     }
+
+    public KeyPressPage clickKeyPressLink (){
+        clickLink("Key Presses");
+        return new KeyPressPage(driver);
+    }
+
+    public HorizentalSliderPage clickHorizentalSliderLink (){
+        clickLink("Horizontal Slider");
+        return new HorizentalSliderPage(driver);
+    }
 }
