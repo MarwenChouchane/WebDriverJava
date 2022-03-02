@@ -1,4 +1,4 @@
-package pages;
+package pages.hover;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

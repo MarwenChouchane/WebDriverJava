@@ -2,8 +2,6 @@ package dropDown;
 
 import base.BaseTests;
 import org.testng.annotations.Test;
-import pages.ConfirmationPage;
-import pages.ForgottenPasswordPage;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;

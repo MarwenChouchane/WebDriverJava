@@ -1,7 +1,15 @@
-package pages;
+package pages.home;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import pages.alert.JavaScriptAlertPage;
+import pages.dropDown.DropDownPage;
+import pages.dropDown.ForgottenPasswordPage;
+import pages.hover.HoversPage;
+import pages.keys.HorizentalSliderPage;
+import pages.keys.KeyPressPage;
+import pages.login.LoginPage;
+import pages.uploadFile.FileUploadPage;
 
 public class HomePage {
     private WebDriver driver ;
@@ -60,5 +68,10 @@ public class HomePage {
     public JavaScriptAlertPage clickJavaScriptAlertLink (){
         clickLink("JavaScript Alerts");
         return new JavaScriptAlertPage(driver);
+    }
+
+    public FileUploadPage clickFileUploadLink (){
+        clickLink("File Upload");
+        return new FileUploadPage(driver);
     }
 }
