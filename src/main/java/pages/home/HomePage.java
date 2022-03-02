@@ -9,6 +9,7 @@ import pages.hover.HoversPage;
 import pages.keys.HorizentalSliderPage;
 import pages.keys.KeyPressPage;
 import pages.login.LoginPage;
+import pages.uploadFile.ContextMenuPage;
 import pages.uploadFile.FileUploadPage;
 
 public class HomePage {
@@ -73,5 +74,10 @@ public class HomePage {
     public FileUploadPage clickFileUploadLink (){
         clickLink("File Upload");
         return new FileUploadPage(driver);
+    }
+
+    public ContextMenuPage clickContextMenuLink (){
+        clickLink("Context Menu");
+        return new ContextMenuPage(driver);
     }
 }
