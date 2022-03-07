@@ -5,6 +5,9 @@ import org.openqa.selenium.WebDriver;
 import pages.alert.JavaScriptAlertPage;
 import pages.dropDown.DropDownPage;
 import pages.dropDown.ForgottenPasswordPage;
+import pages.frame.FrameExcercicePage;
+import pages.frame.FramePage;
+import pages.frame.NestedFramePage;
 import pages.hover.HoversPage;
 import pages.keys.HorizentalSliderPage;
 import pages.keys.KeyPressPage;
@@ -79,5 +82,15 @@ public class HomePage {
     public ContextMenuPage clickContextMenuLink (){
         clickLink("Context Menu");
         return new ContextMenuPage(driver);
+    }
+
+    public FramePage clickframeLink (){
+        clickLink("WYSIWYG Editor");
+        return new FramePage(driver);
+    }
+
+    public NestedFramePage clickFrameExcerciceLink (){
+        clickLink("Frames");
+        return new NestedFramePage(driver);
     }
 }
