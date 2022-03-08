@@ -14,6 +14,7 @@ import pages.keys.KeyPressPage;
 import pages.login.LoginPage;
 import pages.uploadFile.ContextMenuPage;
 import pages.uploadFile.FileUploadPage;
+import pages.wait.DynamicLoadingPage;
 
 public class HomePage {
     private WebDriver driver ;
@@ -92,5 +93,10 @@ public class HomePage {
     public NestedFramePage clickFrameExcerciceLink (){
         clickLink("Frames");
         return new NestedFramePage(driver);
+    }
+
+    public DynamicLoadingPage clickDynamicLoadingLink (){
+        clickLink("Dynamic Loading");
+        return new DynamicLoadingPage(driver);
     }
 }
