@@ -5,10 +5,11 @@ import org.openqa.selenium.WebDriver;
 import pages.alert.JavaScriptAlertPage;
 import pages.dropDown.DropDownPage;
 import pages.dropDown.ForgottenPasswordPage;
-import pages.frame.FrameExcercicePage;
 import pages.frame.FramePage;
 import pages.frame.NestedFramePage;
 import pages.hover.HoversPage;
+import pages.javaScript.InfiniteScrollPage;
+import pages.javaScript.LargeAndDeepDomPage;
 import pages.keys.HorizentalSliderPage;
 import pages.keys.KeyPressPage;
 import pages.login.LoginPage;
@@ -98,5 +99,15 @@ public class HomePage {
     public DynamicLoadingPage clickDynamicLoadingLink (){
         clickLink("Dynamic Loading");
         return new DynamicLoadingPage(driver);
+    }
+
+    public LargeAndDeepDomPage clickLargeAndDeepDomLink (){
+        clickLink("Large & Deep DOM");
+        return new LargeAndDeepDomPage(driver);
+    }
+
+    public InfiniteScrollPage clickInfiniteScrollLink (){
+        clickLink("Infinite Scroll");
+        return new InfiniteScrollPage(driver);
     }
 }
