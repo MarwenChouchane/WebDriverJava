@@ -13,6 +13,7 @@ import pages.javaScript.LargeAndDeepDomPage;
 import pages.keys.HorizentalSliderPage;
 import pages.keys.KeyPressPage;
 import pages.login.LoginPage;
+import pages.multipleWindow.OpeningNewWindowsPage;
 import pages.uploadFile.ContextMenuPage;
 import pages.uploadFile.FileUploadPage;
 import pages.wait.DynamicLoadingPage;
@@ -109,5 +110,10 @@ public class HomePage {
     public InfiniteScrollPage clickInfiniteScrollLink (){
         clickLink("Infinite Scroll");
         return new InfiniteScrollPage(driver);
+    }
+
+    public OpeningNewWindowsPage clickMultipleWindowsLink (){
+        clickLink("Multiple Windows");
+        return new OpeningNewWindowsPage(driver);
     }
 }

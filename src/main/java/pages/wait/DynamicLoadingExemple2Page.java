@@ -11,7 +11,7 @@ import java.util.NoSuchElementException;
 
 public class DynamicLoadingExemple2Page {
 
-    private WebDriver driver ;
+    private WebDriver driver;
     private By startButton = By.cssSelector("div#start > button");
     private By loadingindicator = By.id("loading");
     private By loadedText = By.id("finish");
@@ -20,18 +20,18 @@ public class DynamicLoadingExemple2Page {
         this.driver = driver;
     }
 
-    public void clickButton (){
+    public void clickButton() {
 //      explicit wait
         driver.findElement(startButton).click();
         WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.until(ExpectedConditions.presenceOfElementLocated(loadedText)); //wait until the text appear in the dom
     }
 
-    public boolean isStartButtonDisplayed (){
+    public boolean isStartButtonDisplayed() {
         return driver.findElement(startButton).isDisplayed();
     }
 
-    public String getLoadedText (){
+    public String getLoadedText() {
         return driver.findElement(loadedText).getText();
     }
 }
